@@ -1,0 +1,19 @@
+interface GigabitEthernet$($AccessPort)
+ description VM:$($custid):V$($vlan):$($suffix)
+ switchport access vlan $($vlan)
+ switchport mode access
+ logging event link-status
+ storm-control broadcast level 8.00
+ storm-control action trap
+ no cdp enable
+ speed auto
+ duplex auto
+ no shut
+ spanning-tree guard root
+ service-policy input PM-G-RateLimit$($ratelimit)Mbps
+ service-policy output PM-G-RateLimit$($ratelimit)Mbps
+exit   
+
+vlan $($vlan)
+    name P10:$($custid):V$($vlan)
+end

@@ -1,0 +1,9 @@
+#$($hostname)
+	default interface Gi$($interface)
+	interface Gi$($interface)
+	 description SD::V998
+	 switchport access vlan 998
+	 shutdown
+	End
+
+No vlan $($VLANID)

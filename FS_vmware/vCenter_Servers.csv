@@ -1,0 +1,7 @@
+Name,Hosts,VMs,Mode,Market
+ATLVCS01.peak10ms.com,97,2611,Linked,ATL
+ATLVCS02.peak10ms.com,12,81,Linked,ATL2
+CLTVCS01.peak10ms.com,92,2596,Linked,CLT
+LOUVCS01.peak10ms.com,53,1439,Linked,LOU
+NASVCS01.peak10ms.com,25,822,Linked,NAS
+PEAK1005-VCS98.peak10ms.com,26,183,Linked,Peak1005

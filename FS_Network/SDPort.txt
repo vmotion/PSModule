@@ -1,0 +1,18 @@
+interface GigabitEthernet$($AccessPort)
+ description SD:$($CustID):V$($VLAN)
+ switchport access vlan $($VLAN)
+ switchport trunk native vlan 998
+ switchport mode access
+ mtu 9198
+ logging event link-status
+ speed Auto
+ duplex Auto
+ no snmp trap link-status
+ storm-control broadcast level 8.00
+ storm-control action trap
+ no cdp enable
+ spanning-tree portfast trunk
+ spanning-tree guard root
+ service-policy input PM-G-RateLimit250Mbps
+ service-policy output PM-G-RateLimit250Mbps
+end
